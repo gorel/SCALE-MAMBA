@@ -270,9 +270,9 @@ class Value(object):
         try:
             value = self.empty
             while True:
-                if value in (1, 1):
+                if value == 1:
                     return '<>'
-                if value in (0, 0):
+                if value == 0:
                     return '<%s>' % str(self.value)
                 value = value.value
         except:
